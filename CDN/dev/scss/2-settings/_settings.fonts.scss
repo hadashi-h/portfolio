@@ -1,0 +1,61 @@
+$base-font-family: "";
+$base-font-size: 100%;
+$base-font-weight: 400;
+$base-font-style: normal;
+
+$base-line-height: 1.5;
+$base-spacing: 1.5em;
+
+$base-duration: 0.4s;
+$base-timing: ease-in-out;
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+html {
+  font-family: $base-font-family;
+  color: $font-color;
+  font-size: $base-font-size;
+  font-weight: $base-font-weight;
+  font-style: $base-font-style;
+  line-height: $base-line-height;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: $base-font-size * (5/6)em;
+}
+
+h3 {
+  font-size: $base-font-size + (4/6)em;
+}
+
+h4 {
+  font-size: $base-font-size + (3/6)em;
+}
+
+h5 {
+  font-size: $base-font-size + (2/6)em;
+}
+
+h6 {
+  font-size: $base-font-size + (1/6)em;
+}
+
+a {
+  color: $blue;
+  text-decoration-skip: ink;
+  transition: color $base-duration $base-timing;
+
+  &:hover {
+    color: shade($blue, 25%);
+  }
+}
+ 

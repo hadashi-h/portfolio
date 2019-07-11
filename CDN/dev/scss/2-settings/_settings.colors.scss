@@ -1,0 +1,95 @@
+// Colors
+$white: #fafafa;
+$full-white: #ffffff;
+$red: #b01f1c;
+$black: #202020;
+$blue: #007acc;
+$orange: #ffa500;
+$green: #13c63e;
+$blue-green: #067f6f;
+
+$light-gray: #dcdcdc;
+$gray: #828282;
+$dark-gray: #444444;
+
+//defaults
+$brand-color: $red; 
+
+//fonts 
+$font-color:                        $black; 
+$font-brand-color:                  $brand-color;
+$font-light-color:                  $white;
+$font-action-color:                 $brand-color; 
+$link-color:                        $blue;
+
+//background
+$background-color:                  $white;
+$background-color-hover:            lighten($light-gray, 5%);
+$background-dark-color:             $black;
+$background-dark-color-hover:       $dark-gray;
+
+$tab-background-color: $white;
+
+$border-color: $light-gray;
+
+$icon-color: $gray; 
+$icon-secondary-color: $light-gray;
+
+$input-background-color: $full-white;
+
+//buttons
+ 
+                            //normal                        reversed 
+$btn-ghost: (
+    default: (
+        background-color:   (transparent,                   transparent), 
+        font-color:         ($brand-color,                  $white),
+        border-color:       ($brand-color,                  $white)
+    ),
+    hover: (
+        background-color:   ($white,                        $white),
+        font-color:         ($brand-color,                  $red),
+        border-color:       ($brand-color,                  $white),
+    ),
+    pressed: (
+        background-color:   ($white,                        $white),
+        font-color:         ($brand-color,                  $red),
+        border-color:       ($brand-color,                  $white),
+    )
+);
+
+$btn-cta: (
+    default: (
+        background-color:   ($brand-color,                  $white), 
+        font-color:         ($white,                        $brand-color),
+        border-color:       (transparent,                   transparent)
+    ),
+    hover: (
+        background-color:   (darken($brand-color, 10%),     darken($white, 15%)),
+        font-color:         ($white,                        $brand-color),
+        border-color:       (transparent,                   transparent)
+    ),
+    pressed: (
+        background-color:   (darken($brand-color, 15%),     darken($white, 15%)),
+        font-color:         ($white,                        $brand-color),
+        border-color:       (transparent,                   transparent)
+    )
+);
+
+$btn-flat: (
+    default: (
+        background-color:   (transparent,                   transparent),
+        font-color:         ($link-color,                   $link-color),
+        border-color:       (transparent,                   transparent)
+    ),
+    hover: (
+        background-color:   (transparent,                   transparent),
+        font-color:         ($link-color,                   $link-color),
+        border-color:       (transparent,                   transparent)
+    ),
+    pressed: (
+        background-color:   (transparent,                   transparent),
+        font-color:         ($link-color,                   $link-color),
+        border-color:       (transparent,                   transparent)
+    )
+);
