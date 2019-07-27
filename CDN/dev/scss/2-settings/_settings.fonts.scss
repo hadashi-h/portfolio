@@ -18,15 +18,18 @@ h5,
 h6,
 html {
   font-family: $base-font-family;
-  color: $font-color;
   font-size: $base-font-size;
   font-weight: $base-font-weight;
   font-style: $base-font-style;
   line-height: $base-line-height;
+  color: $font-color;
+  font-family: 'Quicksand', sans-serif;
 }
 
 h1 {
   font-size: 2em;
+  font-family: 'Cinzel', serif;
+  text-align: center;
 }
 
 h2 {
