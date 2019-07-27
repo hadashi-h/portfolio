@@ -1,0 +1,4 @@
+
+.isometric{
+    @include transform(scale(1, .7) skew(-30deg) rotate(30deg));
+}
