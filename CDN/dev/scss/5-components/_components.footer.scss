@@ -1,0 +1,6 @@
+footer {
+    color: $white;
+    padding: 15px 0 0;
+    @include gradient(to left, #434343, #000000);
+  }
+  
