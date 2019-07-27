@@ -22,6 +22,9 @@
 @mixin skew ($x, $y) {
    @include transform(skew(#{$x}deg, #{$y}deg));
 }
+@mixin skew ($x) {
+  @include transform(skew(#{$x}deg));
+}
 //transform origin
 @mixin transform-origin ($origin) {
     moz-transform-origin: $origin;
