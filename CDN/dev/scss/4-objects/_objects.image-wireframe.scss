@@ -1,0 +1,41 @@
+
+ 
+ $width: 400px;
+ $height: $width/3*2;
+ $color: #41403E;
+ 
+ %angled-line{
+     content: "";
+    position: absolute;
+    height: 1px; 
+    background-color: $color;
+    padding: 1px;
+    
+    left: 00;
+    top: 48%;
+    width: 100%;
+ }
+
+ .image-wireframe{
+    width: $width;
+    height: $height;
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    /* 
+    border-top-left-radius: 255px 15px;
+    border-top-right-radius: 15px 225px;
+    border-bottom-right-radius: 225px 15px;
+    border-bottom-left-radius:15px 255px;
+    */
+    border:solid 2px $color;
+    position: relative;
+    margin: 3em 1em;
+
+    &:after{
+        @extend %angled-line;
+        @include rotate(30);
+    }
+    &:before{
+        @extend %angled-line;    
+        transform: rotate(-33deg);
+    }
+ }
