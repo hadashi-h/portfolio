@@ -1,0 +1,13 @@
+
+section#section-frontend {
+    svg, img {
+      background: white;
+      margin: 15px;
+      width: 25%;
+      height: fit-content;
+      padding: 1em;
+      @include material-shadow(3);
+      border-right: 10px solid #e6e5e588;
+      border-bottom: 5px solid #b5b5b5;
+    }
+  }
