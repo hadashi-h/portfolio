@@ -1,0 +1,28 @@
+section#section-home {
+    color: $white;
+    height: 100vh;
+    @include gradient(to left, #434343, #000000);
+
+
+    
+.offset-border-wrapper{
+  margin: 25px;
+
+  img{
+      max-width: 100%;
+      @include material-shadow(4);
+  }
+
+  .offset-border{
+      border: 1px solid;
+      margin: -25px 25px;    
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+  }
+}
+
+  }
+  
