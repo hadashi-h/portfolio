@@ -2,7 +2,9 @@ section#section-home {
     color: $white;
     height: 100vh;
     @include gradient(to left, #434343, #000000);
-
+  h1{
+    color: $white;
+  }
 
     
 .offset-border-wrapper{
