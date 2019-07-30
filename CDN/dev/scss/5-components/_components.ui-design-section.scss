@@ -1,0 +1,7 @@
+section#section-design{
+    color: $white; 
+    @include gradient(to left, #434343, #000000);
+    h1{
+        color: $white;
+    }
+}
