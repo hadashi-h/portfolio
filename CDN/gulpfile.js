@@ -26,7 +26,11 @@ function browserSync(done) {
   browsersync.init({
     server: {
       baseDir: "./dist",
-      directory: true
+      directory: true,
+      middleware: function (req, res, next) {
+        res.setHeader('Access-Control-Allow-Origin', '*');
+        next();
+      }
     },
     port: 3000
   });
