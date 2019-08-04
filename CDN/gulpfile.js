@@ -117,6 +117,13 @@ function libs() {
     .pipe(browsersync.stream());
 }
 
+function fonts() {
+  return gulp
+    .src([
+      'node_modules/@fortawesome/fontawesome-free/webfonts/*'
+    ])
+    .pipe(gulp.dest('dist/webfonts'));
+}
 
 function watchFiles() {
   gulp.watch("dev/scss/**/*", css);
@@ -124,7 +131,7 @@ function watchFiles() {
   gulp.watch("dev/lib/**/*", libs);
 }
  
-var build =  gulp.parallel(css, defaultCss, defaultJs, libs);
+var build =  gulp.parallel(css, defaultCss, defaultJs, libs, fonts);
 var watch = gulp.series(build, gulp.parallel(watchFiles, browserSync));
 
 exports.images = images;
