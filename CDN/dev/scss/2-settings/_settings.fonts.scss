@@ -61,3 +61,20 @@ a {
   }
 }
  
+.handwritten{
+  font-family: 'Reenie Beanie', cursive!important;
+}
+
+.crossed-out{
+  background-image: url(http://localhost:3000/img/elements/cross.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  .handwritten{
+    position: absolute;
+    top: -1.3em;
+    left: .5em;
+    @include rotate(-3);
+  }
+}
