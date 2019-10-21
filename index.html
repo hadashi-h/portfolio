@@ -23,7 +23,7 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col">
-          <img src="http://localhost:3000/img/logos/logo-white.png" alt="">
+          <img class="img-fluid" src="http://localhost:3000/img/logos/logo-white.png" alt="">
           <h1>
             <span class="crossed-out"><span class="handwritten">Unicorn</span>Full-Stack</span> Designer & illustrator</h1>
             <button class="btn-cta">Let's talk</button>
@@ -36,13 +36,13 @@
     <div class="container">
       <div class="row">
         <div class="col">
-          <h1>I can help you with Full Designing Process</h1>
+          <h1 class="text-center">I can help you with Full Designing Process</h1>
         </div>
       </div>
-      <div class="d-flex justify-content-between">
+      <div class="d-flex justify-content-between text-center">
         <div class="point">
           <div class="point-text">
-            <i class="fas fa-adjust"></i>
+            <i class="fas fa-drafting-compass"></i>
             UX Design
           </div>
           <div class="circles">
@@ -52,9 +52,9 @@
             <div class="circle"></div>
           </div>
         </div>
-        <div class="point mt-5">
+        <div class="point">
           <div class="point-text">
-            <i class="fas fa-adjust"></i>
+            <i class="fas fa-swatchbook"></i>
             UI Design
           </div>
           <div class="circles">
@@ -66,7 +66,7 @@
         </div>
         <div class="point">
           <div class="point-text">
-            <i class="fas fa-adjust"></i>
+            <i class="fas fa-laptop-code"></i>
             Front-End Development
           </div>            
           <div class="circles">
@@ -82,29 +82,39 @@
 
   <section id="section-ux">
     <div class="container">
-      <div class="d-flex justify-content-between">
-        <div class="info">
-          <h1>UX Design Powers</h1>
-          <p>Wireframes</p>
-          <p>Usability testing</p>
-          <p>Client and competition analysis</p>
-          <p>Interactive mockups</p>
+      <div class="row">
+       
+        <div class="col-sm-6 order-sm-2">
+          <div class="image-wireframe"></div>
         </div>
-        <div class="image-wireframe"></div>
+        <div class="col-sm-6 order-sm-1">
+            <div class="info">
+              <h1>UX Design Powers</h1>
+              <p>Wireframes</p>
+              <p>Usability testing</p>
+              <p>Client and competition analysis</p>
+              <p>Interactive mockups</p>
+              <!-- <button class="btn-handdrawn btn-examples">See examples</button> -->  
+          </div>
       </div>
     </div>
   </section>
 
   <section id="section-design">
     <div class="container">
-      <div class="d-flex justify-content-between">
-        <div class="img"></div>
-        <div class="info">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="img"></div>
+        </div>
+        
+        <div class="col-sm-6">
           <h1>UI Design Powers</h1>
-          <p>Visual and graphic design</p>
-          <p>Branding</p>
-          <p>Typography</p>
-          <p>Websites, mobile and desktop applications, advertising materials</p>
+            <p>Visual and graphic design</p>
+            <p>Branding</p>
+            <p>Typography</p>
+            <p>Websites, mobile and desktop applications, advertising materials</p>
+            <!-- <button class="btn-cta btn-examples" disabled>See examples</button> -->
+          </div>
         </div>
       </div>
     </div>
@@ -114,16 +124,17 @@
   <section id="section-frontend">
     <div class="container">
       <div class="row">
-        <div class="col">
+        <div class="col-sm-6">
           <div class="info">
             <h1>Front-End Powers</h1>
             <p>I can code what I design - Simple as that!</p>
             <p>Websites</p>
             <p>Desktop applications</p>
             <p>Mobile apps</p>
+            <!-- <button class="btn-cta btn-examples" disabled>See examples</button> -->
           </div>
         </div>
-        <div class="col">
+        <div class="col-sm-6">
           <div class="isometric">
             <i class="fab fa-css3"></i>
             <i class="fab fa-html5"></i>
