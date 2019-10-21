@@ -103,12 +103,12 @@ function defaultJs() {
 function images() {
   return gulp
     .src([
-      'dev/images/**/*.+(png|jpg|gif|svg)'
+      'dev/img/**/*.+(png|jpg|gif|svg|ico)'
     ])
     .pipe(cache(imagemin({
       interlaced: true
     })))
-    .pipe(gulp.dest('dist/images'))
+    .pipe(gulp.dest('dist/img'))
     .pipe(browsersync.stream());
 }
 
@@ -129,10 +129,12 @@ function fonts() {
     .pipe(gulp.dest('dist/webfonts'));
 }
 
+
 function watchFiles() {
   gulp.watch("dev/scss/**/*", css);
   gulp.watch("dev/js/**/*", js);
   gulp.watch("dev/lib/**/*", libs);
+  gulp.watch("dev/img/**/*", images); 
 }
  
 var build =  gulp.parallel(css, defaultCss, defaultJs, libs, fonts);
