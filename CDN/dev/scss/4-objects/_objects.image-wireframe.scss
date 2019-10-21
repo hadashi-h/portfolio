@@ -30,6 +30,7 @@
     border:solid 2px $color;
     position: relative;
     margin: 3em auto;
+    background: rgba($black, .2);
 
     &:after{
         @extend %angled-line;
