@@ -4,23 +4,27 @@ $circle-size: 25vmin;
 $displacement: .8%;
 
 
-.point { 
-  border-radius: 50%;
-  text-align: center;
-  padding: 3em;
+.point {   
   height: $circle-size;
   width: $circle-size;
   float: left;
   box-sizing: border-box;
   position: relative;
+  margin-top: 2.5em;
 }
 
-.point-text{
+.point-text{ 
+  height: $circle-size;
+  width: $circle-size; 
   z-index: 999;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 25%;
   color: $full-white;
+  svg{
+      display: block;
+      margin: 0 auto;
+      font-size: 2em;
+  }
 }
  
 .circles {

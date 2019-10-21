@@ -2,14 +2,16 @@ section#section-home {
   color: $white;
   height: 100vh;
   @include gradient(to left, #434343, #000000);
+  
+  $padding-size: 20px;
+  padding-left: $padding-size;
+  img {
+    margin-left: -$padding-size;
+  }
+
   h1 {
     color: $white;
-    font-size: 4em;
     font-family: "Quicksand", sans-serif;
-    margin-left: 70px;
-  }
-  .btn-cta {
-    margin-left: 70px;
   }
 
   .offset-border-wrapper {
@@ -28,6 +30,17 @@ section#section-home {
       position: absolute;
       top: 0;
       left: 0;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    $padding-size: 70px;
+    padding-left: $padding-size;
+    img {
+      margin-left: -$padding-size;
+    }
+    h1{
+      font-size: 4em;
     }
   }
 }

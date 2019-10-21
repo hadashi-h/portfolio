@@ -2,17 +2,30 @@
 section#section-frontend {
     svg, img {
       background: white;
-      margin: 1em;
       width: 25%;
-      height: 137px;
-      padding: 1em;
+      height: 60px;
+      padding: .5em;
       @include material-shadow(3);
       border-right: 10px solid #e6e5e588;
       border-bottom: 5px solid #b5b5b5;
       vertical-align: unset
     }
     .isometric{
-      margin-top: -68px;
+      margin-top: -30px;
       margin-bottom: -100px;
+      margin-right: -66px;
+    }
+
+    @media (min-width: 992px) {
+      svg, img {
+        margin: 1em;
+        height: 137px;
+        padding: 1em;
+      }
+      .isometric{
+        margin-top: -68px;
+        margin-bottom: -100px;
+        margin-right: 0;
+      }
     }
   }

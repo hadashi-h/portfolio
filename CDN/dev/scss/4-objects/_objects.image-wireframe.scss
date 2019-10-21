@@ -17,6 +17,7 @@
  }
 
  .image-wireframe{
+    max-width: 100%;
     width: $width;
     height: $height;
     border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
@@ -28,7 +29,7 @@
     */
     border:solid 2px $color;
     position: relative;
-    margin: 3em 1em;
+    margin: 3em auto;
 
     &:after{
         @extend %angled-line;
