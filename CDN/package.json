@@ -33,7 +33,7 @@
     "@fortawesome/fontawesome-free": "^5.5.0",
     "jquery": "^3.4.1",
     "jquery-mousewheel": "^3.1.13",
-    "jquery-validation": "^1.19.0",
+    "jquery-validation": "^1.19.3",
     "jquery-validation-unobtrusive": "^3.2.11",
     "malihu-custom-scrollbar-plugin": "^3.1.5",
     "bootstrap": "^4.3.1",
